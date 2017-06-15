@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BERSEY</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+</head>
+<body<%= @bodyclass %>>
+<!--   Navbar Section   -->
+<header>
+	<div class="navbar-fixed">
+		<nav class="white" role="navigation">
+			<div class="nav-wrapper">
+				<ul class="left">
+					<a href="/" class="brand-logo">
+						<img src="/images/bersey.png" id="logo"></img>
+					</a>
+				</ul>
+				<ul id="mobile-demo" class="side-nav">
+					<li><a href="/products">PRODUCTS</a></li>
+					<li><a href="/references">REFERENCES</a></li>
+					<li><a href="/projects">PROJECTS</a></li>
+					<li><a href="/career">CAREERS</a></li>
+					<li><a href="/contactus">CONTACT</a></li>
+				</ul>
+				<ul id="navbar" class="right hide-on-med-and-down">
+					<li class="active"><a href="/"><strong>HOME</strong></a></li>
+					<li><a href="/products" class="nav-btn"><strong>PRODUCTS</strong></a></li>
+					<li><a href="/references" class="nav-btn"><strong>REFERENCES</strong></a></li>
+					<li><a href="/projects" class="nav-btn"><strong>PROJECTS</strong></a></li>
+					<li><a href="/career" class="nav-btn"><strong>CAREERS</strong></a></li>
+					<li><a href="/contactus" class="nav-btn"><strong>CONTACT</strong></a></li>
+				</ul>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="small material-icons">menu</i></a>
+			</div>
+		</nav>
+	</div>
+</header>
+<!--   Main Section   -->
+<%= yield %>	
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/home.js"></script>
+</body>
+</html>
