@@ -980,7 +980,7 @@
 }
 
 .teal {
-  background-color: #009688 !important;
+  background-color: #212121 !important;
 }
 
 .teal-text {
@@ -4511,6 +4511,7 @@ small {
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
   background-color: #fff;
+  min-height: 335px;
 }
 
 .card {

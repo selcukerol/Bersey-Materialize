@@ -138,10 +138,6 @@ nav .brand-logo {
   color: #444;
 }
 
-p {
-  line-height: 2rem;
-}
-
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -238,6 +234,9 @@ body footer.page-footer{
   letter-spacing: 2px;
   font-size: 24px;
 }
+p {
+  line-height: 2rem;
+}
 /*=============================================================================================================*/
                               /*****NAV BAR********/                           
 /*==============================================================================================================*/
@@ -272,7 +271,7 @@ margin: 50px;
 }
 
 #contact-submit{
-  background-color: #0099ff;
+  background-color: #263238;
 }
 
 #confirm{
@@ -295,40 +294,6 @@ margin: 50px;
   width: auto;
 }
 
-/*=============================================================================================================*/
-                              /*****ABOUT US********/                           
-/*==============================================================================================================*/
-
-#aboutus-panel{
-  position: absolute;
-  height: 100vh;
-  text-align: justify;
-  font-size: 1.1em;
-  z-index: 100;
-  line-height: 1.6em;
-  font-weight: 550;
-}
-
-#aboutus-panel::before{
-  content:"";
-  height: 95vh;
-  width: 100vw;
-  display: block;
-  position: fixed;
-  z-index: -1;
-  background: url(/images/baw.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.2;
-}
-
-body .card-panel{
-  margin-top: 12%;
-  background-color: transparent;
-  
-}
 /*=============================================================================================================*/
                               /*****REFERENCES********/                           
 /*==============================================================================================================*/
@@ -357,7 +322,7 @@ body .card-panel{
   text-align: left;
 }
 .referencesheader{
-  font-weight: 600;
+  font-weight: 300;
 }
 /*=============================================================================================================*/
                               /*****PRODUCTS********/                           
@@ -381,9 +346,21 @@ body .card-panel{
   opacity: 0.3;
   overflow: scroll;
 }
-#products-align{
+.relative-align{
   position: relative;
 }
+/*=============================================================================================================*/
+                              /*****SCOTCH TYPE BOILERS********/                           
+/*==============================================================================================================*/
+ .thermal-list{
+  list-style-type: disc !important;
+  margin-top: 10px; 
+ }
+ #scotch-container{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+ }
 /*=============================================================================================================*/
                               /*****CAREERS********/                           
 /*==============================================================================================================*/
@@ -405,6 +382,10 @@ body .card-panel{
   z-index: -1;
   opacity: 0.3;
 }
+
+/*=============================================================================================================*/
+                              /*****TERMS AND LEGAL********/                           
+/*==============================================================================================================*/
 
 
 
