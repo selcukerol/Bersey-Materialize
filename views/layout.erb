@@ -27,7 +27,7 @@
 					<li><a href="/contactus">CONTACT</a></li>
 				</ul>
 				<ul id="navbar" class="right hide-on-med-and-down">
-					<li class="active"><a href="/"><strong>HOME</strong></a></li>
+					<li><a href="/"><strong>HOME</strong></a></li>
 					<li><a href="/products" class="nav-btn"><strong>PRODUCTS</strong></a></li>
 					<li><a href="/references" class="nav-btn"><strong>REFERENCES</strong></a></li>
 					<li><a href="/projects" class="nav-btn"><strong>PROJECTS</strong></a></li>
@@ -44,5 +44,13 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="/js/materialize.js"></script>
 <script src="/js/home.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#navbar a').filter(function(){return this.href==location.href}).parent().addClass('active').siblings().removeClass('active')
+	$('#navbar a').click(function(){
+		$(this).parent().addClass('active').siblings().removeClass('active')	
+	})
+})
+</script>
 </body>
 </html>

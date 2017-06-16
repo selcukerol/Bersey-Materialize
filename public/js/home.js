@@ -33,13 +33,13 @@ $(document).ready(function() {
 })(jQuery); // end of jQuery name space
 
 ///////////////////////// NAV BAR SELECTION NOT WORKING/////////////////////////////////////////////////////
-
-$("nav ul").click(function(event) {
-    // remove classes from all lis
-    $("ul li.active").removeClass("active");
-    // add class to the one we clicked
-    $(event.target).addClass("active");
-  });
+// $("nav ul").click(function(event) {
+//     // remove classes from all lis
+//     $("li.active").removeClass("active");
+//     // add class to the one we clicked
+//     var par = $(event.target).parent().parent();
+//     $(par).addClass("active");
+//   });
 
 ////////////////////////////////////// // FORM CONTROL /////////////////////////////////////////////////////////
 
