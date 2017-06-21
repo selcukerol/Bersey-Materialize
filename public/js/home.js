@@ -32,15 +32,6 @@ $(document).ready(function() {
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-///////////////////////// NAV BAR SELECTION NOT WORKING/////////////////////////////////////////////////////
-// $("nav ul").click(function(event) {
-//     // remove classes from all lis
-//     $("li.active").removeClass("active");
-//     // add class to the one we clicked
-//     var par = $(event.target).parent().parent();
-//     $(par).addClass("active");
-//   });
-
 ////////////////////////////////////// // FORM CONTROL /////////////////////////////////////////////////////////
 
 (function() {

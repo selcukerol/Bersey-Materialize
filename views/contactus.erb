@@ -1,13 +1,10 @@
 <!-- contact.erb -->
-
-<div class="container">
-	<div id = "contact"></div>
+<div class="white contactus">
 	<% if flash[:confirm] %>
 	<div id="confirm"><%= flash[:confirm] %></div>
 	<% end %>
-
 	<div class="row">
-		<form class="col s6 offset-s3" id ="form" action="/contactus" method="POST">
+		<form class="col l6 push-l3" id ="form" action="/contactus" method="POST">
 			<div class="row">
 				<h3 class="left-align" id="form-heading">CONTACT US</h3>
 				<div class="input-field col s6">
@@ -41,11 +38,13 @@
 					<label for="comment">Message</label>
 				</div>
 			</div>
-			<div class="row right-align">
+			<div class="row right">
 				<button class="btn waves-effect waves-light" id="contact-submit" type="submit" name="action">Submit
 					<i class="material-icons right">send</i>
 				</button>
 			</div>			           
-		</form>       
+		</form>      
 	</div>
-</div> 
+</div>
+
+

@@ -8,7 +8,7 @@
 }
 
 /*=============================================================================================================*/
-                              /*INTRO ANIMATION*/                           
+/*INTRO ANIMATION*/                           
 /*==============================================================================================================*/
 
 .welcome-container {
@@ -165,7 +165,7 @@ footer.page-footer {
   margin: 0;
 }
 /*=============================================================================================================*/
-                              /*SLIDER IMAGES*/                           
+/*SLIDER IMAGES*/                           
 /*==============================================================================================================*/
 
 .slider .indicators .indicator-item {
@@ -204,7 +204,7 @@ footer.page-footer {
   filter:brightness(70%); 
 }
 /*=============================================================================================================*/
-                              /*MAIN PAGE*/                           
+/*MAIN PAGE*/                           
 /*==============================================================================================================*/
 
 #logo{
@@ -215,17 +215,13 @@ footer.page-footer {
   margin-left: 9px;
 }
 @media only screen and (max-width: 480px) {
-#logo{
-  width: 96px;
-  height: auto;
-  display: none;
-  margin-top: 9px;
-  margin-left: 9px;
-}
-}
-body footer.page-footer{
-  padding-top: 5px;
-  padding-bottom: 5px;
+  #logo{
+    width: 96px;
+    height: auto;
+    display: none;
+    margin-top: 9px;
+    margin-left: 9px;
+  }
 }
 .button-collapse >i{
   color: #000;
@@ -237,8 +233,18 @@ body footer.page-footer{
 p {
   line-height: 2rem;
 }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
 /*=============================================================================================================*/
-                              /*****NAV BAR********/                           
+/*****NAV BAR********/                           
 /*==============================================================================================================*/
 
 body #sidenav-overlay{
@@ -258,20 +264,15 @@ body .side-nav a{
 }
 
 /*=============================================================================================================*/
-                              /*****CONTACT FORM********/                           
+/*****CONTACT FORM********/                           
 /*==============================================================================================================*/
 
 #form{
-margin-top: 5%;
-background-color: #fff; 
+  background-color: #fff; 
 }
 
 #form-heading{
-margin: 50px;
-}
-
-#contact-submit{
-  background-color: #263238;
+  margin: 50px;
 }
 
 #confirm{
@@ -281,12 +282,13 @@ margin: 50px;
   margin-top: 30px;
 }
 
-#form-layout{
-  height: 100vh;
+.contactus{
+ height: 80vh;
 }
 
+
 /*=============================================================================================================*/
-                              /*****GOOGLE MAPS********/                           
+/*****GOOGLE MAPS********/                           
 /*==============================================================================================================*/
 
 #map{
@@ -295,74 +297,56 @@ margin: 50px;
 }
 
 /*=============================================================================================================*/
-                              /*****REFERENCES********/                           
+/*****REFERENCES********/                           
 /*==============================================================================================================*/
-#references-container{
-  height: 100vh;
+.references-container{
+  height: 88vh;
   width: 100vw;
-}
-#references-container::before{
-  content: "";
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background:url(/images/references.jpg) no-repeat center center fixed;
+  overflow: scroll;
+  background:url(/images/career.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.6;
-  z-index: -1;
-  overflow: scroll;
+  z-index: -100;
 }
-#references-container{
-  overflow: scroll;
-}
- div.referencesbody > table.striped > tbody > tr > td.costumers{
+div.referencesbody > table.striped > tbody > tr > td.costumers{
   text-align: left;
 }
 .referencesheader{
   font-weight: 300;
 }
 /*=============================================================================================================*/
-                              /*****PRODUCTS********/                           
+/*****PRODUCTS********/                           
 /*==============================================================================================================*/
-#products-container{
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
+
+.product-list{
+  width: 399px;
 }
-#products-container::before{
-  content: "";
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background:url(/images/products-alt.jpg) no-repeat center center fixed;
+.image-container{
+  height: 88vh;
+  background:url(/images/career.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: -1;
-  opacity: 0.3;
-  overflow: scroll;
+  z-index: -100;
 }
-.relative-align{
-  position: relative;
-}
+
 /*=============================================================================================================*/
-                              /*****SCOTCH TYPE BOILERS********/                           
+/*****SCOTCH TYPE BOILERS********/                           
 /*==============================================================================================================*/
- .thermal-list{
+.thermal-list{
   list-style-type: disc !important;
   margin-top: 10px; 
- }
- #scotch-container{
+}
+#scotch-container{
   height: 100vh;
   width: 100vw;
   position: absolute;
- }
+}
 /*=============================================================================================================*/
-                              /*****CAREERS********/                           
+/*****CAREERS********/                           
 /*==============================================================================================================*/
 #career{
   position: relative;
@@ -384,13 +368,13 @@ margin: 50px;
 }
 
 /*=============================================================================================================*/
-                              /*****TERMS AND LEGAL********/                           
+/*****TERMS AND LEGAL********/                           
 /*==============================================================================================================*/
 
 
 
 /*=============================================================================================================*/
-                              /*****FOOTER********/                           
+/*****FOOTER********/                           
 /*==============================================================================================================*/
 
 .footer{
