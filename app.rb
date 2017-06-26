@@ -22,6 +22,30 @@ get '/aboutus' do
 
 end
 
+get '/news1' do
+
+   erb :news1    
+
+end
+
+get '/news2' do
+
+   erb :news2    
+
+end
+
+get '/news3' do
+
+   erb :news3    
+
+end
+
+get '/news4' do
+
+   erb :news4    
+
+end
+
 get '/terms' do
 
    erb :terms    

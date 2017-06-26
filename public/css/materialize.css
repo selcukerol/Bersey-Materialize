@@ -2552,7 +2552,7 @@ ul:not(.browser-default) li {
 }
 
 a {
-  color: #039be5;
+  color: #fff;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   z
@@ -3096,7 +3096,7 @@ td, th {
 
 .secondary-content {
   float: right;
-  color: #0099ff;
+  color: #fff;
 }
 
 .collapsible .collection {
@@ -4127,7 +4127,7 @@ nav ul li {
 }
 
 nav ul li.active {
-  background-color: #263238;
+  background-color: #bdbdbd;
 }
 
 nav ul li.active a{
@@ -4141,6 +4141,8 @@ nav ul a {
   display: block;
   padding: 0 15px;
   cursor: pointer;
+  font-family:"RundschriftPro";
+  letter-spacing: 1.5px;
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
@@ -4261,7 +4263,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "HelveticaNeue";
+  font-family: "HelveticaNeue"; 
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -4923,8 +4925,8 @@ small {
 
 .btn, .btn-large,
 .btn-flat {
-  border: 1px white solid;;
-  border-radius: 2px;
+  border: none;
+  border-radius: 45%;
   display: inline-block;
   height: 36px;
   line-height: 36px;
@@ -4996,7 +4998,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #263238;
+  background-color: #2196f3;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
@@ -5490,9 +5492,7 @@ button.btn-floating {
 }
 
 .collapsible {
-  border-top: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-left: 1px solid #ddd;
+  border:none;
   margin: 0.5rem 0 1rem 0;
 }
 
@@ -5503,7 +5503,7 @@ button.btn-floating {
   line-height: 3rem;
   padding: 0 1rem;
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  border: none;
 }
 
 .collapsible-header i {
