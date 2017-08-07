@@ -64,45 +64,45 @@ get '/products' do
 
 end
 
-get '/products/:scotch' do
+get '/products/scotch' do
 
-   erb :scotch     
-
-end
-
-get '/products/:biomass' do
-
-   erb :biomass     
+   erb :"products/scotch"     
 
 end
 
-get '/products/:fluidized' do
+get '/products/biomass' do
 
-   erb :fluidized     
-
-end
-
-get '/products/:hotwater' do
-
-   erb :hotwater     
+   erb :"products/biomass"     
 
 end
 
-get '/products/:thermal' do
+get '/products/fluidized' do
 
-   erb :thermal     
-
-end
-
-get '/products/:wasteheat' do
-
-   erb :wasteheat     
+   erb :"products/fluidized"     
 
 end
 
-get '/products/:waterpipe' do
+get '/products/hotwater' do
 
-   erb :waterpipe     
+   erb :"products/hotwater"     
+
+end
+
+get '/products/thermal' do
+
+   erb :"products/thermal"     
+
+end
+
+get '/products/wasteheat' do
+
+   erb :"products/wasteheat"     
+
+end
+
+get '/products/waterpipe' do
+
+   erb :"products/waterpipe"     
 
 end
 
