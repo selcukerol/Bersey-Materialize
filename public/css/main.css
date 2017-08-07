@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @font-face {
-    font-family: 'RundschriftPro';
-    src: url('../fonts/rundschriftpro/RundschriftPro-webfont.woff2') format('woff2'),
-         url('../fonts/rundschriftpro/RundschriftPro-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'RundschriftPro';
+  src: url('../fonts/rundschriftpro/RundschriftPro-webfont.woff2') format('woff2'),
+  url('../fonts/rundschriftpro/RundschriftPro-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
 }
 
@@ -346,6 +346,15 @@ div.referencesbody > table.striped > tbody > tr > td.costumers{
 }
 #product-button{
   width: 250px;
+}
+
+#collection-products{
+  border: none;
+  font-weight: 300;
+  font-family: "RundschriftPro";
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
 }
 
 /*=============================================================================================================*/

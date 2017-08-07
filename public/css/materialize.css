@@ -2146,7 +2146,7 @@
  *    without disabling user zoom.
  */
 html {
-  font-family: sans-serif;
+  font-family: "RundschriftPro", sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -2867,7 +2867,7 @@ ul.staggered-list li {
 }
 
 footer.page-footer {
-  padding: 5px;
+  padding: 6px;
 }
 
 footer.page-footer .footer-copyright {
@@ -3017,6 +3017,7 @@ td, th {
   padding: 10px 20px;
   margin: 0;
   border-bottom: 1px solid #e0e0e0;
+  border-radius: 5px;
 }
 
 .collection .collection-item.avatar {
@@ -3096,7 +3097,7 @@ td, th {
 
 .secondary-content {
   float: right;
-  color: #fff;
+  color: #0099ff;
 }
 
 .collapsible .collection {
@@ -4263,7 +4264,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "HelveticaNeue"; 
+/*  font-family: "HelveticaNeue"; */
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
