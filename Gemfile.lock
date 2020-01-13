@@ -16,8 +16,8 @@ GEM
     concurrent-ruby (1.0.5)
     i18n (0.8.1)
     minitest (5.10.1)
-    rack (1.6.5)
-    rack-protection (1.5.3)
+    rack (1.6.12)
+    rack-protection (1.5.5)
       rack
     ruby_http_client (3.0.1)
     sendgrid-ruby (4.0.8)
