@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 (function() {
 
-	var inputs = document.createElement('input');
+var inputs = document.createElement('input');
 	
 	var supports = {};
 	

@@ -1,0 +1,50 @@
+<!-- iletisim.erb -->
+<div class="white contactus">
+	<% if flash[:confirm] %>
+	<div id="confirm"><%= flash[:confirm] %></div>
+	<% end %>
+	<div class="row">
+		<form class="col l6 push-l3" id ="form" action="/iletisim" method="POST">
+			<div class="row">
+				<h4 class="left-align" id="form-heading">İLETİŞİM</h4>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">account_circle</i>
+					<input name="name" placeholder="İsim giriniz" id="name" type="text" class="active validate" required>
+					<label for="name">İsim</label>
+				</div>
+				<div class="input-field col s6">      
+					<label for="surname">Soyadı</label>
+					<input name="surname" id="surname" type="text" placeholder="Soyadı giriniz" class="validate" required>          
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">view_array</i>	
+					<input name="company" placeholder="Şirket ismi giriniz" id="company" type="text" class="validate">
+					<label for="company">Şirket</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">email</i>	
+					<input name="email" placeholder="Email giriniz" id="email" type="email" class="validate" required>
+					<label for="email">Email</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">mode_edit</i>
+					<textarea name="comment" id="comment" class="materialize-textarea" required></textarea>
+					<label for="comment">Mesaj</label>
+				</div>
+			</div>
+			<div class="row right">
+				<button class="btn waves-effect waves-light" id="contact-submit" type="submit" name="action">Gönder
+					<i class="material-icons right">send</i>
+				</button>
+			</div>			           
+		</form>      
+	</div>
+</div>
+
+

@@ -10,121 +10,116 @@ before do
   @bodyclass = ' class="std"'
 end
 
+###########==================================================================================##############
+
+                                  #TURKCE SITE SUNUMLARI#####
+
+##########===================================================================================##############
+
 get '/' do
   @bodyclass = ""
-  erb :home	   
+  erb :anasayfa	   
 
 end
 
-get '/aboutus' do
+get '/hakkimizda' do
 
-   erb :aboutus	   
-
-end
-
-get '/news1' do
-
-   erb :news1    
+   erb :hakkimizda	   
 
 end
 
-get '/news2' do
+get '/haber1' do
 
-   erb :news2    
-
-end
-
-get '/news3' do
-
-   erb :news3    
+   erb :haber1    
 
 end
 
-get '/news4' do
+get '/haber2' do
 
-   erb :news4    
-
-end
-
-get '/terms' do
-
-   erb :terms    
+   erb :haber2    
 
 end
 
-get '/projects' do
+get '/haber3' do
 
-   erb :projects	   
-
-end
-
-get '/products' do
-
-   erb :products     
+   erb :haber3    
 
 end
 
-get '/products/scotch' do
+get '/haber4' do
 
-   erb :"products/scotch"     
-
-end
-
-get '/products/biomass' do
-
-   erb :"products/biomass"     
+   erb :haber4    
 
 end
 
-get '/products/fluidized' do
+get '/sartlar' do
 
-   erb :"products/fluidized"     
-
-end
-
-get '/products/hotwater' do
-
-   erb :"products/hotwater"     
+   erb :sartlar    
 
 end
 
-get '/products/thermal' do
 
-   erb :"products/thermal"     
+get '/urunler' do
 
-end
-
-get '/products/wasteheat' do
-
-   erb :"products/wasteheat"     
+   erb :urunler     
 
 end
 
-get '/products/waterpipe' do
+get '/urunler/skoc' do
 
-   erb :"products/waterpipe"     
-
-end
-
-get '/references' do
-
-   erb :references
+   erb :"urunler/skoc"     
 
 end
 
-get '/career' do
+get '/urunler/biokutle' do
 
-   erb :career   
-
-end   
-
-get '/contactus' do
-
-   erb :contactus	   
+   erb :"urunler/biokutle"     
 
 end
 
-post '/contactus' do
+get '/urunler/akiskan' do
+
+   erb :"urunler/akiskan"     
+
+end
+
+get '/urunler/sicaksu' do
+
+   erb :"urunler/sicaksu"     
+
+end
+
+get '/urunler/termal' do
+
+   erb :"urunler/termal"     
+
+end
+
+get '/urunler/isikaybi' do
+
+   erb :"urunler/isikaybi"     
+
+end
+
+get '/urunler/suborusu' do
+
+   erb :"urunler/suborusu"     
+
+end
+
+get '/referanslar' do
+
+   erb :referanslar
+
+end  
+
+get '/iletisim' do
+
+   erb :iletisim	   
+
+end
+
+post '/iletisim' do
 
     p params
     p params[:email], params["email"]
@@ -152,6 +147,224 @@ post '/contactus' do
 
     params.inspect
     flash[:confirm] = "We received your email, we will get back to you shortly"	
-    redirect '/contactus'   
+    redirect '/iletisim'   
 
 end	
+
+###########==================================================================================##############
+
+                                  ###### ENGLISH SITE REQUESTS #####
+
+##########===================================================================================##############
+
+get '/en/' do
+
+  erb :"en/home"    
+
+end
+
+get '/en/aboutus' do
+
+   erb :"en/aboutus"    
+
+end
+
+get '/en/news1' do
+
+   erb :"en/news1"    
+
+end
+
+get '/en/news2' do
+
+   erb :"en/news2"    
+
+end
+
+get '/en/news3' do
+
+   erb :"en/news3"    
+
+end
+
+get '/en/news4' do
+
+   erb :"en/news4"    
+
+end
+
+get '/en/terms' do
+
+   erb :"en/terms"    
+
+end
+
+
+get '/en/products' do
+
+   erb :"en/products"     
+
+end
+
+get '/en/products/scotch' do
+
+   erb :"en/products/scotch"     
+
+end
+
+get '/en/products/biomass' do
+
+   erb :"en/products/biomass"     
+
+end
+
+get '/en/products/fluidized' do
+
+   erb :"en/products/fluidized"     
+
+end
+
+get '/en/products/hotwater' do
+
+   erb :"en/products/hotwater"     
+
+end
+
+get '/en/products/thermal' do
+
+   erb :"en/products/thermal"     
+
+end
+
+get '/en/products/wasteheat' do
+
+   erb :"en/products/wasteheat"     
+
+end
+
+get '/en/products/waterpipe' do
+
+   erb :"en/products/waterpipe"     
+
+end
+
+get '/en/references' do
+
+   erb :"en/references"
+
+end  
+
+get '/en/contactus' do
+
+   erb :"en/contactus"    
+
+end
+
+###########==================================================================================##############
+
+                                  ###### RUSSIAN SITE REQUESTS #####
+
+##########===================================================================================##############
+
+get '/ru/' do
+
+  erb :"ru/home"    
+
+end
+
+get '/ru/aboutus' do
+
+   erb :"ru/aboutus"    
+
+end
+
+get '/ru/news1' do
+
+   erb :"ru/news1"    
+
+end
+
+get '/ru/news2' do
+
+   erb :"ru/news2"    
+
+end
+
+get '/ru/news3' do
+
+   erb :"ru/news3"    
+
+end
+
+get '/ru/news4' do
+
+   erb :"ru/news4"    
+
+end
+
+get '/ru/terms' do
+
+   erb :"en/terms"    
+
+end
+
+
+get '/ru/products' do
+
+   erb :"ru/productru"     
+
+end
+
+get '/ru/products/scotch' do
+
+   erb :"ru/products/scotch"     
+
+end
+
+get '/ru/products/biomass' do
+
+   erb :"ru/products/biomass"     
+
+end
+
+get '/ru/products/fluidized' do
+
+   erb :"ru/products/fluidized"     
+
+end
+
+get '/ru/products/hotwater' do
+
+   erb :"ru/products/hotwater"     
+
+end
+
+get '/ru/products/thermal' do
+
+   erb :"ru/products/thermal"     
+
+end
+
+get '/ru/products/wasteheat' do
+
+   erb :"ru/products/wasteheat"     
+
+end
+
+get '/ru/products/waterpipe' do
+
+   erb :"ru/products/waterpipe"     
+
+end
+
+get '/ru/references' do
+
+   erb :"ru/references"
+
+end  
+
+get '/ru/contactus' do
+
+   erb :"ru/contactus"    
+
+end

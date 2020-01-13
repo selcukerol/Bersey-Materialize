@@ -1,0 +1,145 @@
+<head>
+  <title>Projects</title>
+</head>
+<div id="map"></div>
+<div id="info1">
+  <table style="width:100%">
+    <tr>
+      <th>Company:</th>
+      <td>SFC</td>
+    </tr>
+    <tr>
+      <th>Project:</th>
+      <td>Thermal Boiler Installation</td> 
+    </tr>
+    <tr>
+      <th>Value(USD):</th>
+      <td>2.000.000</td>
+    </tr>
+    <tr>
+      <th>Completion Date:</th>
+      <td>30/02/2006</td>
+    </tr>
+  </table>
+</div>
+<div id="info2">
+  <table style="width:100%">
+    <tr>
+      <th>Company:</th>
+      <td>NYCDA</td>
+    </tr>
+    <tr>
+      <th>Project:</th>
+      <td>Thermal Boiler Installation</td> 
+    </tr>
+    <tr>
+      <th>Value(USD):</th>
+      <td>2.000.000</td>
+    </tr>
+    <tr>
+      <th>Completion Date:</th>
+      <td>30/02/2006</td>
+    </tr>
+  </table>
+</div>
+<div id="info3">
+  <table style="width:100%">
+    <tr>
+      <th>Company:</th>
+      <td>Ahmet</td>
+    </tr>
+    <tr>
+      <th>Project:</th>
+      <td>Thermal Boiler Installation</td> 
+    </tr>
+    <tr>
+      <th>Value(USD):</th>
+      <td>2.000.000</td>
+    </tr>
+    <tr>
+      <th>Completion Date:</th>
+      <td>30/02/2006</td>
+    </tr>
+  </table>
+</div>
+<div id="info4">
+  <table style="width:100%">
+    <tr>
+      <th>Company:</th>
+      <td>Coffey LTD. STI</td>
+    </tr>
+    <tr>
+      <th>Project:</th>
+      <td>Thermal Boiler Installation</td> 
+    </tr>
+    <tr>
+      <th>Value(USD):</th>
+      <td>2.000.000</td>
+    </tr>
+    <tr>
+      <th>Completion Date:</th>
+      <td>30/02/2006</td>
+    </tr>
+  </table>
+</div>
+<div id="info5">
+  <table style="width:100%">
+    <tr>
+      <th>Company:</th>
+      <td>STK</td>
+    </tr>
+    <tr>
+      <th>Project:</th>
+      <td>Thermal Boiler Installation</td> 
+    </tr>
+    <tr>
+      <th>Value(USD):</th>
+      <td>24.000.000</td>
+    </tr>
+    <tr>
+      <th>Completion Date:</th>
+      <td>30/02/2006</td>
+    </tr>
+  </table>
+</div>
+<div id="info6">
+  <p><strong>BERSEY LTD STI.</strong></p>
+</div>
+
+<script>   
+  markers = [];
+  var lastInfo;
+  var locations = [{lat: 47.4116, lng: 28.3699, description: "P0"}, {lat: 43.1198, lng: 131.8869, description: "P1"}, {lat: 45.9432, lng: 24.9668, description: "P2"}, {lat: 41.4104, lng: 33.6998, description: "P3"}, {lat: 32.4279, lng: 53.6880, description:"P4"}, {lat: 41.0082, lng: 28.9784, description:"BERSEY"}]
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'),{
+      center: {lat: 42.0082, lng: 80.9784}, 
+      zoom: 4
+    });
+    locations.forEach( function(c,i){
+    /// add a new marker to the markers array
+    let marker = new google.maps.Marker({
+      position: {lat:c.lat, lng: c.lng},
+      map:map,
+      icon:'https:///maps.google.com/mapfiles/ms/icons/blue-dot.png'
+    }); 
+
+    let content = document.getElementById('info'+(i+1));
+    marker.addListener('mouseover', function(event){
+      console.log('hover detected', lastInfo);
+      if(lastInfo) lastInfo.close();
+      let t = new google.maps.InfoWindow({
+        content: content
+      });
+      t.open(map,markers[i]);
+      lastInfo = t;
+    });
+    markers.push(marker);
+  });  
+  };  
+</script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLE_API_KEY']%>&callback=initMap" async defer> 
+    </script>
+
+
+
