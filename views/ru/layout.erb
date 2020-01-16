@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BERSEY</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+</head>
+<body<%= @bodyclass %>>
+<!--   Navbar Section   -->
+<header>
+	<div class="navbar-fixed">
+		<nav class="white" role="navigation">
+			<div class="nav-wrapper">
+				<ul class="left">
+					<a href="/" class="brand-logo">
+						<img src="/images/bersey.png" id="logo"></img>
+					</a>
+				</ul>
+				<ul id="mobile-demo" class="side-nav">
+					<li><a href="/">HOME</a></li>
+					<li><a href="/aboutus">ABOUT US</a></li>
+					<li><a href="/products">PRODUCTS</a></li>
+					<li><a href="/references">REFERENCES</a></li>
+					<!-- <li><a href="/projects">PROJECTS</a></li> -->
+					<!-- <li><a href="/career">CAREERS</a></li> -->
+					<li><a href="/contactus">CONTACT</a></li>
+				</ul>
+				<ul id="navbar" class="right hide-on-med-and-down">
+					<li><a href="/" class="nav-btn">HOME</a></li>
+					<li><a href="/aboutus" class="nav-btn">ABOUT US</a></li>
+					<li><a href="/products" class="nav-btn">PRODUCTS</a></li>
+					<li><a href="/references" class="nav-btn">REFERENCES</a></li>
+					<!-- <li><a href="/projects" class="nav-btn"><strong>PROJECTS</strong></a></li> -->
+					<!-- <li><a href="/career" class="nav-btn"><strong>CAREERS</strong></a></li> -->
+					<li><a href="/contactus" class="nav-btn">CONTACT</a></li>
+				</ul>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="small material-icons">menu</i></a>
+			</div>
+		</nav>
+	</div>
+</header>
+<!--   Main Section   -->
+<main>
+<%= yield %>
+</main>
+<footer class="page-footer grey darken-4">
+	<div class="footer-copyright grey darken-4">
+		<div class="container">
+			<p class= "right grey-text text-lighten-1">© 2017 by BERSEY LTD STI. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src = /js/cookies.js></script>	
+<script src="/js/jquery.js"></script>
+<script src="/js/home.js"></script>
+<script src="/js/materialize.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#navbar a').filter(function(){return this.href==location.href}).parent().addClass('active').siblings().removeClass('active')
+	$('#navbar a').click(function(){
+		$(this).parent().addClass('active').siblings().removeClass('active')	
+	})
+})
+</script>
+</body>
+</html>

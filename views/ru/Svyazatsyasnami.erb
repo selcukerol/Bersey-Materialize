@@ -1,0 +1,50 @@
+<!-- contact.erb -->
+<div class="white contactus">
+	<% if flash[:confirm] %>
+	<div id="confirm"><%= flash[:confirm] %></div>
+	<% end %>
+	<div class="row">
+		<form class="col l6 push-l3" id ="form" action="/contactus" method="POST">
+			<div class="row">
+				<h4 class="left-align" id="form-heading">СВЯЗАТЬСЯ С НАМИ</h4>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">account_circle</i>
+					<input name="name" placeholder="Name" id="name" type="text" class="active validate" required>
+					<label for="name">имя</label>
+				</div>
+				<div class="input-field col s6">      
+					<label for="surname">Фамилия</label>
+					<input name="surname" id="surname" type="text" placeholder="Surname" class="validate" required>          
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">view_array</i>	
+					<input name="company" placeholder="Company" id="company" type="text" class="validate">
+					<label for="company">Компания</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">email</i>	
+					<input name="email" placeholder="Email" id="email" type="email" class="validate" required>
+					<label for="email">Эл. адрес</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">mode_edit</i>
+					<textarea name="comment" id="comment" class="materialize-textarea" required></textarea>
+					<label for="comment">Сообщение</label>
+				</div>
+			</div>
+			<div class="row right">
+				<button class="btn waves-effect waves-light" id="contact-submit" type="submit" name="action">Submit
+					<i class="material-icons right">Отправить</i>
+				</button>
+			</div>			           
+		</form>      
+	</div>
+</div>
+
+
