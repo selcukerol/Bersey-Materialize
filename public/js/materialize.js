@@ -679,6 +679,9 @@ if (jQuery) {
         var leftPosition = 0;
 
         // Below Origin
+        // Added by DK to over ride the default value
+        curr_options.belowOrigin = true;
+       
         var verticalOffset = 0;
         if (curr_options.belowOrigin === true) {
           verticalOffset = originHeight;

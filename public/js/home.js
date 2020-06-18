@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	$('html,body').scrollTop(0);
 	/////////////////////////OPENING INTRO/////////////////////////////////////////////////////
 	if (/visited=true/.test(document.cookie)){
@@ -37,29 +38,50 @@ $(document).ready(function() {
 			$('.parallax').parallax();
 			setTimeout(function(){$('.slider').slider();
 		},1000);	
+
   }); // end of document ready
-})(jQuery); // end of jQuery name space
+	})(jQuery); // end of jQuery name space
 
-////////////////////////////////////// // FORM CONTROL /////////////////////////////////////////////////////////
+	////////////////////////////////////// // FORM CONTROL /////////////////////////////////////////////////////////
 
-(function() {
+	(function() {
 
-var inputs = document.createElement('input');
-	
-	var supports = {};
-	
-	supports.autofocus   = 'autofocus' in inputs;
-	supports.required    = 'required' in inputs;
-	supports.placeholder = 'placeholder' in inputs;
+	var inputs = document.createElement('input');
+		
+		var supports = {};
+		
+		supports.autofocus   = 'autofocus' in inputs;
+		supports.required    = 'required' in inputs;
+		supports.placeholder = 'placeholder' in inputs;
 
-	var send = document.getElementById('contact-submit');
-	if(send) {
-		send.onclick = function () {
-			this.innerHTML = '...Sending';
+		var send = document.getElementById('contact-submit');
+		if(send) {
+			send.onclick = function () {
+				this.innerHTML = '...Sending';
+			}
 		}
-	}
-})();	
+	})();	
+
+
+
+	/////// Dodo demo
+	$('.dropdown-button').dropdown({
+      hover: false
+    }
+  );
+
+	//$('.stop-click').click(function() {
+  	//$('.dropdown-button').dropdown('open');
+  //	alert( "5" );
+	//});
+
 });
+
+// $('.dropdown-button').click(function() {
+//  	$('.dropdown-button').dropdown('open');
+//  	alert( "5" );
+//	});
+
 
 
 
