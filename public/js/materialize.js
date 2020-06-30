@@ -2633,7 +2633,8 @@ if (jQuery) {
               menu.velocity({'translateX': [0, -1 * options.menuWidth]}, {duration: 300, queue: false, easing: 'easeOutQuad'});
             }
             else {
-              $dragTarget.css({width: '50%', right: '', left: 0});
+            	//DK updated width to 20% the original was 50%
+              $dragTarget.css({width: '20%', right: '', left: 0});
               menu.velocity({'translateX': [0, options.menuWidth]}, {duration: 300, queue: false, easing: 'easeOutQuad'});
             }
 
