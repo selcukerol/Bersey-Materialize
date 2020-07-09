@@ -233,13 +233,13 @@ get '/ru/ssylka' do
 
 end  
 
-get '/ru/svyazatsyasnami' do
+get '/ru/svyazat' do
 
-   erb :"ru/svyazatsyasnami", :layout => :'ru/layout_ru'    
+   erb :"ru/svyazat", :layout => :'ru/layout_ru'    
 
 end
 
-post '/ru/svyazatsyasnami' do
+post '/ru/svyazat' do
 
     p params
     p params[:email], params["email"]
@@ -267,6 +267,6 @@ post '/ru/svyazatsyasnami' do
 
     params.inspect
     flash[:confirm] = "We received your email, we will get back to you shortly" 
-    redirect '/ru/svyazatsyasnami'   
+    redirect '/ru/svyazat'   
 
 end
