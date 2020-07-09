@@ -2943,6 +2943,7 @@ td, th {
   table.responsive-table td {
     margin: 0;
     vertical-align: top;
+    font-size: 11px;
   }
   table.responsive-table th {
     text-align: left;
@@ -4275,11 +4276,19 @@ html {
   html {
     font-size: 14px;
   }
+  .linkedin {
+  width:11%;
+  height:auto;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   html {
     font-size: 14.5px;
+  }
+  .linkedin {
+  width:13%;
+  height:auto;
   }
 }
 
@@ -4289,6 +4298,10 @@ html {
   }
   p {
     font-size: 14px;
+  }
+  .linkedin {
+  width:15%;
+  height:auto;
   }
 }
 
